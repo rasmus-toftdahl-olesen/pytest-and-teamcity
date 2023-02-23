@@ -11,7 +11,9 @@ def test_print_hi(capsys):
 
 def test_slow_test():
     time.sleep(60)
+    print('This test is slow - it just sleeps for 60 seconds')
 
 
 def test_failing_test():
+    print('This test always fail')
     assert False
